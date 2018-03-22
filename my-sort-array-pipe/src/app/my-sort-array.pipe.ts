@@ -6,9 +6,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class MySortArrayPipe implements PipeTransform {
 
   transform(value: number[], args?: string): number[] {
-    if(args == "desk") {
+    if(args == "desc") {
       return value.sort((a, b) => b-a);
-    } else if(args == "ask") {
+    } else if(args == "asc") {
       return value.sort((a, b) => a-b);
     }
   }
